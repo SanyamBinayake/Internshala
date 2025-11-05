@@ -29,7 +29,7 @@ class UserOut(BaseModel):
     email: EmailStr
 
     class Config:
-        from_attributes = True  # allows reading ORM objects directly
+        from_attributes = True
 
 
 # ✅ Event Schemas
