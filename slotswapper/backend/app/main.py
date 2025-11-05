@@ -4,8 +4,6 @@ from app.db import Base, engine
 from app.core.config import settings
 from app.routers import auth, events, swap
 
-
-# Create tables on startup (SQLite file will be created automatically)
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title=settings.PROJECT_NAME)
